@@ -17,7 +17,7 @@ namespace Kalkulator
             InitializeComponent();
             //test
             int b;
-            int c;
+            int d;
         }
     }
 }
