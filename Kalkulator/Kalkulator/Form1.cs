@@ -15,6 +15,7 @@ namespace Kalkulator
         public Form1()
         {
             InitializeComponent();
+            //test
         }
     }
 }
