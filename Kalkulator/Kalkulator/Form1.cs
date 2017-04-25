@@ -16,6 +16,8 @@ namespace Kalkulator
         {
             InitializeComponent();
             //test
+            int b;
+            int d;
         }
     }
 }
