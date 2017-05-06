@@ -16,5 +16,17 @@ namespace Kalkulator
         {
             InitializeComponent();
         }
+        public double dzielenie()
+        {
+            int sprawdzCzyLiczba;
+            if ((Int32.TryParse(textBoxLiczbaA.Text, out sprawdzCzyLiczba)) && (Int32.TryParse(textBoxLiczbaB.Text, out sprawdzCzyLiczba)))
+            {
+                if (Convert.ToInt16(textBoxLiczbaA) != 0)
+                    return Convert.ToInt32(textBoxLiczbaA) / Convert.ToInt32(textBoxLiczbaB);
+            }
+            else
+                MessageBox.Show("W textboxach muszą być tylko liczby!");
+            return 0;
+        }
     }
 }
