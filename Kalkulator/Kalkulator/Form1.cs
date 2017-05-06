@@ -15,10 +15,9 @@ namespace Kalkulator
         public Form1()
         {
             InitializeComponent();
-        }
-
-        double dodawanie(double a, double b){
-            return a + b;
+            //test
+            int b;
+            int d;
         }
     }
 }
