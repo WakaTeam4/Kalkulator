@@ -40,20 +40,18 @@
             // labelLiczbaA
             // 
             this.labelLiczbaA.AutoSize = true;
-            this.labelLiczbaA.Location = new System.Drawing.Point(55, 50);
-            this.labelLiczbaA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLiczbaA.Location = new System.Drawing.Point(41, 41);
             this.labelLiczbaA.Name = "labelLiczbaA";
-            this.labelLiczbaA.Size = new System.Drawing.Size(61, 17);
+            this.labelLiczbaA.Size = new System.Drawing.Size(47, 13);
             this.labelLiczbaA.TabIndex = 0;
             this.labelLiczbaA.Text = "liczba A:";
             // 
             // labelLiczbaB
             // 
             this.labelLiczbaB.AutoSize = true;
-            this.labelLiczbaB.Location = new System.Drawing.Point(297, 50);
-            this.labelLiczbaB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLiczbaB.Location = new System.Drawing.Point(223, 41);
             this.labelLiczbaB.Name = "labelLiczbaB";
-            this.labelLiczbaB.Size = new System.Drawing.Size(61, 17);
+            this.labelLiczbaB.Size = new System.Drawing.Size(47, 13);
             this.labelLiczbaB.TabIndex = 1;
             this.labelLiczbaB.Text = "liczba B:";
             // 
@@ -65,54 +63,50 @@
             "odejmowanie",
             "mnożenie ",
             "dzielenie"});
-            this.comboBoxOperacja.Location = new System.Drawing.Point(129, 70);
-            this.comboBoxOperacja.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxOperacja.Location = new System.Drawing.Point(97, 57);
             this.comboBoxOperacja.Name = "comboBoxOperacja";
-            this.comboBoxOperacja.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxOperacja.Size = new System.Drawing.Size(121, 21);
             this.comboBoxOperacja.TabIndex = 2;
             this.comboBoxOperacja.Text = "Operacja";
             // 
             // textBoxLiczbaA
             // 
-            this.textBoxLiczbaA.Location = new System.Drawing.Point(59, 70);
-            this.textBoxLiczbaA.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLiczbaA.Location = new System.Drawing.Point(44, 57);
             this.textBoxLiczbaA.Name = "textBoxLiczbaA";
-            this.textBoxLiczbaA.Size = new System.Drawing.Size(57, 22);
+            this.textBoxLiczbaA.Size = new System.Drawing.Size(44, 20);
             this.textBoxLiczbaA.TabIndex = 3;
             // 
             // textBoxLiczbaB
             // 
-            this.textBoxLiczbaB.Location = new System.Drawing.Point(299, 70);
-            this.textBoxLiczbaB.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLiczbaB.Location = new System.Drawing.Point(224, 57);
             this.textBoxLiczbaB.Name = "textBoxLiczbaB";
-            this.textBoxLiczbaB.Size = new System.Drawing.Size(57, 22);
+            this.textBoxLiczbaB.Size = new System.Drawing.Size(44, 20);
             this.textBoxLiczbaB.TabIndex = 4;
             // 
             // labelWynik
             // 
             this.labelWynik.AutoSize = true;
-            this.labelWynik.Location = new System.Drawing.Point(365, 74);
-            this.labelWynik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelWynik.Location = new System.Drawing.Point(274, 60);
             this.labelWynik.Name = "labelWynik";
-            this.labelWynik.Size = new System.Drawing.Size(16, 17);
+            this.labelWynik.Size = new System.Drawing.Size(13, 13);
             this.labelWynik.TabIndex = 5;
             this.labelWynik.Text = "=";
             // 
             // buttonOblicz
             // 
-            this.buttonOblicz.Location = new System.Drawing.Point(156, 122);
-            this.buttonOblicz.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOblicz.Location = new System.Drawing.Point(117, 99);
             this.buttonOblicz.Name = "buttonOblicz";
-            this.buttonOblicz.Size = new System.Drawing.Size(100, 28);
+            this.buttonOblicz.Size = new System.Drawing.Size(75, 23);
             this.buttonOblicz.TabIndex = 6;
             this.buttonOblicz.Text = "Oblicz";
             this.buttonOblicz.UseVisualStyleBackColor = true;
+            this.buttonOblicz.Click += new System.EventHandler(this.buttonOblicz_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 549);
+            this.ClientSize = new System.Drawing.Size(443, 446);
             this.Controls.Add(this.buttonOblicz);
             this.Controls.Add(this.labelWynik);
             this.Controls.Add(this.textBoxLiczbaB);
@@ -120,7 +114,6 @@
             this.Controls.Add(this.comboBoxOperacja);
             this.Controls.Add(this.labelLiczbaB);
             this.Controls.Add(this.labelLiczbaA);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

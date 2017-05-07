@@ -16,5 +16,22 @@ namespace Kalkulator
         {
             InitializeComponent();
         }
+
+        private void buttonOblicz_Click(object sender, EventArgs e)
+        {
+            switch (comboBoxOperacja.SelectedIndex) {
+
+                case 0://dodawanie
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+
+
+            }
+        }
     }
 }
