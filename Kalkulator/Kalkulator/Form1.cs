@@ -22,16 +22,25 @@ namespace Kalkulator
             switch (comboBoxOperacja.SelectedIndex) {
 
                 case 0://dodawanie
+
                     break;
-                case 1:
+                case 1://odejmowanie
+
                     break;
-                case 2:
+                case 2://mnożenie
+                    labelWynik.Text = "= " + MaciejMnozenie.Iloczyn(textBoxLiczbaA, textBoxLiczbaB).ToString();
                     break;
-                case 3:
+                case 3://dzielenie
+
                     break;
 
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
