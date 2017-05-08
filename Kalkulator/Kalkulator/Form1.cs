@@ -16,8 +16,32 @@ namespace Kalkulator
         {
             InitializeComponent();
             //test
-            int b;
-            int d;
+          
         }
+
+        private double odejmowanie()
+        {
+            if (Czy_liczba())
+            {
+                int a = Convert.ToInt32(textBoxLiczbaA.Text);
+                int b = Convert.ToInt32(textBoxLiczbaB.Text);
+                return a - b;
+            }
+            else
+                return 0;  
+        }
+      
+        private bool Czy_liczba()
+        {
+            int sprawdz;
+            if ((Int32.TryParse(textBoxLiczbaA.Text, out sprawdz) && (Int32.TryParse(textBoxLiczbaB.Text, out sprawdz))))
+                return true;
+            else
+            {
+                MessageBox.Show("Podaj liczbe!");
+                return false;
+            }
+        }
+
     }
 }
