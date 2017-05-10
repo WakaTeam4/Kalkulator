@@ -15,10 +15,42 @@ namespace Kalkulator
         public Form1()
         {
             InitializeComponent();
+         
+        }
+        private double dodawanie(){
+            if (czyLiczba())
+            {
+                int a = Convert.ToInt32(textBoxLiczbaA.Text);
+                int b = Convert.ToInt32(textBoxLiczbaB.Text);
+                return a + b;
+            }
+            else
+                return 0;
         }
 
-        double dodawanie(double a, double b){
-            return a + b;
+        private double odejmowanie()
+        {
+            if (czyLiczba())
+            {
+                int a = Convert.ToInt32(textBoxLiczbaA.Text);
+                int b = Convert.ToInt32(textBoxLiczbaB.Text);
+                return a - b;
+            }
+            else
+                return 0;  
         }
+      
+        private bool czyLiczba()
+        {
+            int sprawdz;
+            if ((Int32.TryParse(textBoxLiczbaA.Text, out sprawdz) && (Int32.TryParse(textBoxLiczbaB.Text, out sprawdz))))
+                return true;
+            else
+            {
+                MessageBox.Show("Podaj liczbe!");
+                return false;
+            }
+        }
+
     }
 }
