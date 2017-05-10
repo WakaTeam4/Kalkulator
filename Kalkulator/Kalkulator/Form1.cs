@@ -15,9 +15,30 @@ namespace Kalkulator
         public Form1()
         {
             InitializeComponent();
-         
         }
-        private double dodawanie(){
+        
+        public double dzielenie()
+        {
+            if (czyLiczba())
+            {
+                int a = Convert.ToInt32(textBoxLiczbaA.Text);
+                int b = Convert.ToInt32(textBoxLiczbaB.Text);
+                if (b != 0)
+                {
+                    return a / b;
+                }
+                else
+                {
+                    MessageBox.Show("Nie dziel przez zero!");
+                    return 0;
+                }
+            }
+            else
+                return 0;
+        }
+
+        private double dodawanie()
+        {
             if (czyLiczba())
             {
                 int a = Convert.ToInt32(textBoxLiczbaA.Text);
@@ -51,6 +72,5 @@ namespace Kalkulator
                 return false;
             }
         }
-
     }
 }
