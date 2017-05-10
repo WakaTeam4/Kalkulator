@@ -15,8 +15,6 @@ namespace Kalkulator
         public Form1()
         {
             InitializeComponent();
-            //test
-          
         }
 
         private double odejmowanie()
