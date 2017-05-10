@@ -16,17 +16,61 @@ namespace Kalkulator
         {
             InitializeComponent();
         }
+        
         public double dzielenie()
         {
-            int sprawdzCzyLiczba;
-            if ((Int32.TryParse(textBoxLiczbaA.Text, out sprawdzCzyLiczba)) && (Int32.TryParse(textBoxLiczbaB.Text, out sprawdzCzyLiczba)))
+            if (czyLiczba())
             {
-                if (Convert.ToInt16(textBoxLiczbaA) != 0)
-                    return Convert.ToInt32(textBoxLiczbaA) / Convert.ToInt32(textBoxLiczbaB);
+                int a = Convert.ToInt32(textBoxLiczbaA.Text);
+                int b = Convert.ToInt32(textBoxLiczbaB.Text);
+                if (b != 0)
+                {
+                    return a / b;
+                }
+                else
+                {
+                    MessageBox.Show("Nie dziel przez zero!");
+                    return 0;
+                }
             }
             else
-                MessageBox.Show("W textboxach muszą być tylko liczby!");
-            return 0;
+                return 0;
+        }
+
+        private double dodawanie()
+        {
+            if (czyLiczba())
+            {
+                int a = Convert.ToInt32(textBoxLiczbaA.Text);
+                int b = Convert.ToInt32(textBoxLiczbaB.Text);
+                return a + b;
+            }
+            else
+                return 0;
+        }
+
+        private double odejmowanie()
+        {
+            if (czyLiczba())
+            {
+                int a = Convert.ToInt32(textBoxLiczbaA.Text);
+                int b = Convert.ToInt32(textBoxLiczbaB.Text);
+                return a - b;
+            }
+            else
+                return 0;  
+        }
+      
+        private bool czyLiczba()
+        {
+            int sprawdz;
+            if ((Int32.TryParse(textBoxLiczbaA.Text, out sprawdz) && (Int32.TryParse(textBoxLiczbaB.Text, out sprawdz))))
+                return true;
+            else
+            {
+                MessageBox.Show("Podaj liczbe!");
+                return false;
+            }
         }
     }
 }
