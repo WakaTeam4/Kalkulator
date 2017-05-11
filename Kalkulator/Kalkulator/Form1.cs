@@ -22,14 +22,13 @@ namespace Kalkulator
         {
             switch (comboBoxOperacja.SelectedIndex) {
 
-                case 0://dodawanie
-
+                case 0://dodawanie                    
                     break;
                 case 1://odejmowanie
 
                     break;
                 case 2://mnożenie
-                    labelWynik.Text = "= " + MaciejMnozenie.Iloczyn(textBoxLiczbaA, textBoxLiczbaB).ToString();
+                   // labelWynik.Text = "= " + MaciejMnozenie.Iloczyn(textBoxLiczbaA, textBoxLiczbaB).ToString();
                     break;
                 case 3://dzielenie
 
